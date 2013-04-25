@@ -1,0 +1,34 @@
+<% if node['swftp']['sftp']['enabled'] -%>
+[sftp]
+auth_url = <%= @auth_url %>
+host = <%= @listen %>
+port = <%= @port %>
+priv_key = /etc/swftp/id_rsa
+pub_key = /etc/swftp/id_rsa.pub
+num_persistent_connections = <%= @conn_max %>
+num_connections_per_session = <%= @conn_per_sess %>
+connection_timeout = <%= @conn_timeout %>
+<% if node['swftp']['statsd']['enabled'] -%>
+log_statsd_host = <%= @statsd_host %>
+log_statsd_port = <%= @statsd_port %>
+log_statsd_sample_rate = 10
+log_statsd_metric_prefix = sftp
+<% end -%>
+<% end -%>
+
+<% if node['swftp']['ftp']['enabled'] -%>
+[ftp]
+auth_url = <%= @auth_url %>
+host = <%= @listen %>
+port = <%= @ftp_port %>
+num_persistent_connections = <%= @conn_max %>
+num_connections_per_session = <%= @conn_per_sess %>
+connection_timeout = <%= @conn_per_sess %>
+welcome_message = Welcome to SwFTP - An FTP/SFTP interface for Openstack Swift
+<% if node['swftp']['statsd']['enabled'] -%>
+log_statsd_host = <%= @statsd_host %>
+log_statsd_port = <%= @statsd_port %>
+log_statsd_sample_rate = 10
+log_statsd_metric_prefix = ftp
+<% end -%>
+<% end -%>
