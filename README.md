@@ -10,9 +10,6 @@ No addional recipe requirements are needed
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
-
-e.g.
 #### swftp::default
 <table>
   <tr>
@@ -24,7 +21,7 @@ e.g.
   <tr>
     <td><tt>['swftp']['ftp']['enabled']</tt></td>
     <td>Boolean</td>
-    <td>whether to run the FTP</td>
+    <td>Whether to run the FTP</td>
     <td><tt>false</tt></td>
   </tr>
   <tr>
@@ -36,7 +33,7 @@ e.g.
   <tr>
     <td><tt>['swftp']['sftp']['enabled']</tt></td>
     <td>Boolean</td>
-    <td>whether to run the sFTP</td>
+    <td>Whether to run the sFTP</td>
     <td><tt>true</tt></td>
   </tr>
   <tr>
@@ -66,7 +63,7 @@ e.g.
   <tr>
     <td><tt>['swftp']['connection_timeout']</tt></td>
     <td>Integer</td>
-    <td>timeout for the persistent connections</td>
+    <td>Timeout for the persistent connections</td>
     <td><tt>240</tt></td>
   </tr>
   <tr>
@@ -116,4 +113,5 @@ Contributing
 License and Authors
 -------------------
 Authors: Kevin Landreth
+
 License: MIT
