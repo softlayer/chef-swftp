@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'python::pip'
+
 node['swftp']['packages'].each do |pkg|
   package pkg do
     action :install
