@@ -6,7 +6,7 @@ Install and configure [swftp](https://github.com/softlayer/swftp) the chef way.
 Requirements
 ------------
 
-No addional recipe requirements are needed
+- [python](https://github.com/opscode-cookbooks/python) cookbook
 
 Attributes
 ----------
