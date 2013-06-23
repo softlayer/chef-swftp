@@ -1,3 +1,10 @@
+case node['platform_family']
+when "debian"
+  default['swftp']['packages'] = %w{python-dev}
+when "rhel"
+  default['swftp']['packages'] = %w{python-devel}
+end
+
 default['swftp']['ftp']['enabled'] = false
 default['swftp']['ftp']['port'] = 5021
 default['swftp']['sftp']['enabled'] = true
