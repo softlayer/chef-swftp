@@ -1,7 +1,7 @@
 swftp Cookbook
 ==============
 
-Install and configure [swftp](https://github.com/softlayer/swftp) the chef way.
+Install and configure [swftp](https://github.com/softlayer/swftp) the Chef way.
 
 Requirements
 ------------
@@ -103,15 +103,15 @@ Just include `swftp` in your node's `run_list`:
 Contributing
 ------------
 
-1. Fork the repository on Github
+1. Fork the repository on GitHub
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
 4. Write tests for your change (if applicable)
 5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
+6. Submit a Pull Request using GitHub
 
 License and Authors
 -------------------
 Authors: Kevin Landreth
 
-License: MIT
+License: MIT (See LICENSE file)
